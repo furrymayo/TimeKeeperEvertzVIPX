@@ -1,5 +1,8 @@
 /* TimeKeeper */
 
+// Load environment variables from .env file if it exists
+require('dotenv').config();
+
 // Express variables
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -11,7 +14,7 @@ const fs = require('fs');
 const axios = require('axios').default;
 const net = require('net'); // Added net module
 
-const listenPort = 4000;
+const listenPort = process.env.TIMEKEEPER_PORT || 4000;
 const JSONdatafile = 'timekeeper-data.json';
 
 var Rooms = [];
@@ -889,4 +892,4 @@ http.listen(listenPort, function () {
 
 loadFile();
 TriggerInterval = setInterval(TimeKeeper_CheckTriggers, 500);
-TimeKeeper_ReviewTimers();
+TimeKeeper_ReviewTimers();
