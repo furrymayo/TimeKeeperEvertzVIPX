@@ -1,3 +1,5 @@
+> **Legacy log (2026-11-24).** New decisions go in `docs/adr/` as ADRs (index: `docs/adr/README.md`). This file is kept for history and takes no new entries. Where the entries went: the two dotenv / VIP-X-config rows (2025-12-31) → ADR 0002. The three "(original)" rows describe upstream TimeKeeper's stack and were written in the 2026-10-05 scaffold, not when upstream decided; ADR 0001 (fork) and ADR 0002 (JSON file) cover them. The VIP-X UMD output was never logged here → ADR 0003.
+
 # Decision Log
 
 Track architectural and implementation decisions with context and rationale.
