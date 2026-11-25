@@ -28,9 +28,14 @@ Node.js server providing a REST API and real-time WebSocket interface for managi
 | System design & data flow | `docs/architecture.md` |
 | VIPX hosts & network config | `docs/infrastructure.md` |
 | Why we made X decision | `docs/decisions.md` |
+| Architecture decisions (ADR index) | `docs/adr/README.md` |
 | Current blockers/issues | `docs/known-issues.md` |
 | How to do [task] | `docs/runbooks/[name].md` |
 | Domain concepts (UMD protocol, etc.) | `docs/reference/[topic].md` |
+
+## Working rules
+
+- A design choice (protocol, format, framework or major library, security approach, data/config model, deployment topology) adds an ADR in `docs/adr/` in the same PR, plus its row in `docs/adr/README.md`. Never rewrite an accepted ADR; supersede it with a new one.
 
 ## Key Files
 | File | Purpose |
